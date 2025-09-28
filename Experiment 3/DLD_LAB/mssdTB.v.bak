@@ -1,0 +1,168 @@
+
+`timescale 1ns/1ns
+module MSSD_TB ();
+    
+    reg clk, reset , SerIn, clkPB;
+    wire [3:0]P;
+    wire done,serOut_valid;
+
+
+    MSSD mssd_utt(clk,reset,clkPB,SerIn,serOut_valid,done, P);
+    
+    always #5 clk=~clk;
+    initial begin
+        SerIn=1;
+        clk=0;
+        clkPB=0;
+        reset=1;
+        #1 reset=0;
+         
+
+     
+        #500
+        #50 SerIn=0;
+        #20 clkPB=1;
+        #20 clkPB=0;
+        ///AGHAZ CAR     10
+
+        #50 SerIn=0;
+        #20 clkPB=1;
+
+        #20 clkPB=0;
+
+        #50 SerIn=0;
+        #20 clkPB=1;
+
+        #20 clkPB=0;
+
+        #50 SerIn=0; // mire state 5 bit gereftan , ser in mohem nist ???
+        #20 clkPB=1;
+                       //10101
+        #20 clkPB=0;
+                  
+        #100 SerIn=1;
+        #20 clkPB=1;
+
+        #20 clkPB=0;
+
+        #100 SerIn=0;
+        #20 clkPB=1;
+
+        #20 clkPB=0;
+
+        #100 SerIn=1;
+        #20 clkPB=1;
+
+        #20 clkPB=0;
+
+        #100 SerIn=0;
+        #20 clkPB=1;
+
+        #20 clkPB=0;
+
+        #100 SerIn=1;
+        #20 clkPB=1;
+                  
+        #20 clkPB=0;
+
+        /////////////
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=0;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=0;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=0;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=0;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=0;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=1;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=0;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=0;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        #50 SerIn=0;
+        #10 clkPB=1;
+        #20 clkPB=0;
+
+        /////////////////////////
+        #10 clkPB=1;
+        #20 clkPB=0;
+        SerIn=0;
+
+
+
+        #50;
+    $stop;
+
+
+    end
+
+
+endmodule

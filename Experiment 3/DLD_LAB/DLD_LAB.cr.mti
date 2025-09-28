@@ -1,0 +1,64 @@
+C:/Users/Asus/Desktop/DLD_LAB/MSSD_top_module.v {1 {vlog -work work -stats=none C:/Users/Asus/Desktop/DLD_LAB/MSSD_top_module.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module MSSD
+
+Top level modules:
+	MSSD
+
+} {} {}} C:/Users/Asus/Desktop/DLD_LAB/SSD.v {1 {vlog -work work -stats=none C:/Users/Asus/Desktop/DLD_LAB/SSD.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Seven_Segment
+
+Top level modules:
+	Seven_Segment
+
+} {} {}} C:/Users/Asus/Desktop/DLD_LAB/data_path.v {1 {vlog -work work -stats=none C:/Users/Asus/Desktop/DLD_LAB/data_path.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module data_path
+
+Top level modules:
+	data_path
+
+} {} {}} C:/Users/Asus/Desktop/DLD_LAB/demux.v {1 {vlog -work work -stats=none C:/Users/Asus/Desktop/DLD_LAB/demux.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module demux
+
+Top level modules:
+	demux
+
+} {} {}} C:/Users/Asus/Desktop/DLD_LAB/shift_reg.v {1 {vlog -work work -stats=none C:/Users/Asus/Desktop/DLD_LAB/shift_reg.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module shift_register
+
+Top level modules:
+	shift_register
+
+} {} {}} C:/Users/Asus/Desktop/DLD_LAB/controller.v {1 {vlog -work work -stats=none C:/Users/Asus/Desktop/DLD_LAB/controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module controller
+
+Top level modules:
+	controller
+
+} {} {}} C:/Users/Asus/Desktop/DLD_LAB/one_pluser.v {1 {vlog -work work -stats=none C:/Users/Asus/Desktop/DLD_LAB/one_pluser.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module one_pluser
+
+Top level modules:
+	one_pluser
+
+} {} {}} C:/Users/Asus/Desktop/DLD_LAB/counter.v {1 {vlog -work work -stats=none C:/Users/Asus/Desktop/DLD_LAB/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/Asus/Desktop/DLD_LAB/TB_one_pluser.v {1 {vlog -work work -stats=none C:/Users/Asus/Desktop/DLD_LAB/TB_one_pluser.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB_one_pluser
+
+Top level modules:
+	TB_one_pluser
+
+} {} {}}

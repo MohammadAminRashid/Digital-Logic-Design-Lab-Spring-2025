@@ -1,0 +1,275 @@
+vsim -gui work.MSSD_TB
+# vsim -gui work.MSSD_TB 
+# Start time: 13:31:09 on May 03,2025
+# Loading work.MSSD_TB
+# Loading work.MSSD
+# Loading work.one_pluser
+# Loading work.data_path
+# Loading work.shift_register
+# Loading work.counter
+# Loading work.demux
+# Loading work.Seven_Segment
+# Loading work.controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counterD File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counterD File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 24
+# WARNING: No extended dataflow license exists
+view -new wave
+# -new not supported on PE
+add wave -position insertpoint  \
+sim:/MSSD_TB/clk \
+sim:/MSSD_TB/reset \
+sim:/MSSD_TB/SerIn \
+sim:/MSSD_TB/clkPB \
+sim:/MSSD_TB/P \
+sim:/MSSD_TB/done \
+sim:/MSSD_TB/serOut_valid \
+sim:/MSSD_TB/SSD_OUT_LOW \
+sim:/MSSD_TB/SSD_OUT_HIGH
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Asus  Hostname: LAPTOP-F3FQMCQ9  ProcessID: 17092
+#           Attempting to use alternate WLF file "./wlft51tvfx".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft51tvfx
+add wave -position insertpoint  \
+sim:/MSSD_TB/clk \
+sim:/MSSD_TB/reset \
+sim:/MSSD_TB/SerIn \
+sim:/MSSD_TB/clkPB \
+sim:/MSSD_TB/P \
+sim:/MSSD_TB/done \
+sim:/MSSD_TB/serOut_valid \
+sim:/MSSD_TB/SSD_OUT_LOW \
+sim:/MSSD_TB/SSD_OUT_HIGH
+add wave -position insertpoint  \
+sim:/MSSD_TB/mssd_utt/DP/clk \
+sim:/MSSD_TB/mssd_utt/DP/reset \
+sim:/MSSD_TB/mssd_utt/DP/clkEN \
+sim:/MSSD_TB/mssd_utt/DP/sh_en \
+sim:/MSSD_TB/mssd_utt/DP/sh_enD \
+sim:/MSSD_TB/mssd_utt/DP/SerIn \
+sim:/MSSD_TB/mssd_utt/DP/cnt1 \
+sim:/MSSD_TB/mssd_utt/DP/cnt2 \
+sim:/MSSD_TB/mssd_utt/DP/cntD \
+sim:/MSSD_TB/mssd_utt/DP/ld_cntD \
+sim:/MSSD_TB/mssd_utt/DP/co1 \
+sim:/MSSD_TB/mssd_utt/DP/co2 \
+sim:/MSSD_TB/mssd_utt/DP/coD \
+sim:/MSSD_TB/mssd_utt/DP/SSD_OUT_LOW \
+sim:/MSSD_TB/mssd_utt/DP/SSD_OUT_HIGH \
+sim:/MSSD_TB/mssd_utt/DP/P \
+sim:/MSSD_TB/mssd_utt/DP/port_num \
+sim:/MSSD_TB/mssd_utt/DP/num_data \
+sim:/MSSD_TB/mssd_utt/DP/cnt_port \
+sim:/MSSD_TB/mssd_utt/DP/cnt_data_num \
+sim:/MSSD_TB/mssd_utt/DP/data_trans \
+sim:/MSSD_TB/mssd_utt/DP/tens \
+sim:/MSSD_TB/mssd_utt/DP/units
+run -all
+# Starting MSSD Testbench
+# Initialization started at time =                    0
+# Initialization completed at time =                    1
+# Port number transmission at time =                    1
+# Port number completed at time =                  241
+# Data number transmission at time =                  241
+# Data number completed at time =                  721
+# Transfer number transmission at time =                  721
+# Transfer number completed at time =                 2521
+# MSSD Testbench completed
+# ** Note: $stop    : C:/Users/Asus/Desktop/DLD_LAB/mssdTB.v(122)
+#    Time: 3021 ns  Iteration: 0  Instance: /MSSD_TB
+# Break in Module MSSD_TB at C:/Users/Asus/Desktop/DLD_LAB/mssdTB.v line 122
+# Compile of one_pluser.v was successful.
+# Compile of TB_one_pluser.v was successful.
+# Compile of controller.v was successful.
+# Compile of counter.v was successful.
+# Compile of shift_reg.v was successful.
+# Compile of demux.v was successful.
+# Compile of data_path.v was successful.
+# Compile of MSSD_top_module.v was successful.
+# Compile of mssdTB.v was successful.
+# Compile of SSD.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MSSD_TB
+# Loading work.MSSD
+# Loading work.one_pluser
+# Loading work.data_path
+# Loading work.shift_register
+# Loading work.counter
+# Loading work.demux
+# Loading work.Seven_Segment
+# Loading work.controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counterD File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counterD File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 24
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Starting MSSD Testbench
+# Initialization started at time =                    0
+# Initialization completed at time =                    1
+# Port number transmission at time =                    1
+# Port number completed at time =                  241
+# Data number transmission at time =                  241
+# Data number completed at time =                  721
+# Transfer number transmission at time =                  721
+# Transfer number completed at time =                 2521
+# MSSD Testbench completed
+# ** Note: $stop    : C:/Users/Asus/Desktop/DLD_LAB/mssdTB.v(122)
+#    Time: 3021 ns  Iteration: 0  Instance: /MSSD_TB
+# Break in Module MSSD_TB at C:/Users/Asus/Desktop/DLD_LAB/mssdTB.v line 122
+# Compile of one_pluser.v was successful.
+# Compile of TB_one_pluser.v was successful.
+# Compile of controller.v was successful.
+# Compile of counter.v was successful.
+# Compile of shift_reg.v was successful.
+# Compile of demux.v was successful.
+# Compile of data_path.v was successful.
+# Compile of MSSD_top_module.v was successful.
+# Compile of mssdTB.v was successful.
+# Compile of SSD.v was successful.
+# 10 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.MSSD_TB
+# Loading work.MSSD
+# Loading work.one_pluser
+# Loading work.data_path
+# Loading work.shift_register
+# Loading work.counter
+# Loading work.demux
+# Loading work.Seven_Segment
+# Loading work.controller
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counterD File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counterD File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 24
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Starting MSSD Testbench
+# Initialization started at time =                    0
+# Initialization completed at time =                    1
+# Port number transmission at time =                    1
+# Port number completed at time =                  241
+# Data number transmission at time =                  241
+# Data number completed at time =                  721
+# Transfer number transmission at time =                  721
+# Transfer number completed at time =                 2521
+# MSSD Testbench completed
+# ** Note: $stop    : C:/Users/Asus/Desktop/DLD_LAB/mssdTB.v(122)
+#    Time: 3021 ns  Iteration: 0  Instance: /MSSD_TB
+# Break in Module MSSD_TB at C:/Users/Asus/Desktop/DLD_LAB/mssdTB.v line 122
+add wave -position insertpoint  \
+sim:/MSSD_TB/mssd_utt/CU/clk \
+sim:/MSSD_TB/mssd_utt/CU/reset \
+sim:/MSSD_TB/mssd_utt/CU/clkEN \
+sim:/MSSD_TB/mssd_utt/CU/SerIn \
+sim:/MSSD_TB/mssd_utt/CU/co1 \
+sim:/MSSD_TB/mssd_utt/CU/co2 \
+sim:/MSSD_TB/mssd_utt/CU/coD \
+sim:/MSSD_TB/mssd_utt/CU/clear \
+sim:/MSSD_TB/mssd_utt/CU/cnt1 \
+sim:/MSSD_TB/mssd_utt/CU/cnt2 \
+sim:/MSSD_TB/mssd_utt/CU/cntD \
+sim:/MSSD_TB/mssd_utt/CU/ld_cntD \
+sim:/MSSD_TB/mssd_utt/CU/sh_en \
+sim:/MSSD_TB/mssd_utt/CU/sh_enD \
+sim:/MSSD_TB/mssd_utt/CU/serOut_valid \
+sim:/MSSD_TB/mssd_utt/CU/done \
+sim:/MSSD_TB/mssd_utt/CU/p_state \
+sim:/MSSD_TB/mssd_utt/CU/n_state \
+sim:/MSSD_TB/mssd_utt/CU/clk_enable_d
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (2) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter1 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 20
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(2).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'par_load'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(3).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counter2 File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 22
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (32) for port 'direction'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(4).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counterD File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 24
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (32) for port 'upper_bound'. The port definition is at: C:/Users/Asus/Desktop/DLD_LAB/counter.v(5).
+#    Time: 0 ns  Iteration: 0  Instance: /MSSD_TB/mssd_utt/DP/counterD File: C:/Users/Asus/Desktop/DLD_LAB/data_path.v Line: 24
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Starting MSSD Testbench
+# Initialization started at time =                    0
+# Initialization completed at time =                    1
+# Port number transmission at time =                    1
+# Port number completed at time =                  241
+# Data number transmission at time =                  241
+# Data number completed at time =                  721
+# Transfer number transmission at time =                  721
+# Transfer number completed at time =                 2521
+# MSSD Testbench completed
+# ** Note: $stop    : C:/Users/Asus/Desktop/DLD_LAB/mssdTB.v(122)
+#    Time: 3021 ns  Iteration: 0  Instance: /MSSD_TB
+# Break in Module MSSD_TB at C:/Users/Asus/Desktop/DLD_LAB/mssdTB.v line 122
